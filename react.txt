@@ -1,0 +1,178 @@
+                                   REACT(Front end Technology)
+                 ---------------------------------------------------------
+                 Basic commands
+                -----------------------
+                1. to create react app : npx create-react-app project-name
+                2. to run react app : npm start
+                3. Install Material UI : npm install @mui/material @emotion/react @emotion/styled
+                4. to install Axios : npm i axios
+                5. to install react-router-dom: npm i react-router-dom
+                6. installing React Bootstrap: npm install react-bootstrap bootstrap
+                        - Import Bootstrap theme from https://bootswatch.com/ (bootstrap.min.css) to index.js file and include bootstrap
+                7. installing  react toastify : npm i react-toastify
+                8. installing redux Toolkit : npm install @reduxjs/toolkit react-redux
+
+
+
+
+                           Features & concept
+                        ---------------------------
+                        1. Used to built UI with the help of Javascript libraries
+                        2. Used to bulid Single page application
+                        3. Declarative : 
+                        4. Immutable
+                        5. Pure Functions :  It should not cause a side effects
+                        6. Virtual DOM'ing
+                        7. Unidirectional data flow : parent to child flow(bad feature)
+                        8. JSX - (Javascript XML)  
+                               - Every jsx expression should be placed inside a single tag
+                               -React fragment : <> </>
+                               -Instead of Attribute class use className
+                               -Instead of Attribute for use htmlFor
+                               -To display js expression in jsx, place js expression inside a {}
+                               -Every tag should has its closing tag 
+                               -self closing tag
+                        9. Transpilling : converting jsx to HTML,CSS,JS         (in browser - HTML,CSS,JS)  
+                         ----  babel (library Used -- js language)
+                        10. To create React Application --- create-react-app command
+                        11. React application consist of one or more components : A tree structure of components 
+                        with a starting Component - App component
+                        12. Component : is small part of UI , return HTML 
+                                 -Is js file, with file name  and component name always starts with a letter
+                                 -Different Component in React
+                                      -Functional/Stateless components
+                                      -Class/Statefull based components
+                        13. Props : used to share data from parent to child 
+                                    -it is a object
+                                    -child component can access shared data via props from its arrgument 
+                        14. Styling components Using CSS
+                                   - Inline CSS
+                                   - External CSS Sheet
+                                   - CSS Module : a file with extension as .module.css 
+                        15. React Event Handling
+                                   - without argument : event bind using its function name only
+                                   - with argument: eventbind using argument
+                                   - with event object : event bind using arrow function with event object
+                        16. Conditional Rendering :
+                                   - if statements : && operator
+                                   - if-else statements : ?: Ternary operator 
+                        17. React State :
+                                   - predefined object to store property of a class based component
+                                   - when state changes then component re-Render
+                                   - to change value of state -use setState(Value)
+                        18. React Component Lifecycle
+                                   - Mounting phase : putting all elements into DOM
+                                        -constructor()
+                                        -getDerivedStateFromProps()
+                                        -render()
+                                        -componentDidMount()
+                                   - Updating phasse : While updating component
+                                        - getDerivedStateFromProps()
+                                        - shouldComponentUpdate()
+                                        - render()  -if return is true (there is any change)
+                                        - getSnapshotBeforeUpdate()
+                                        - componentDidUpdate()
+                                   - Unmounting phase : Removing component from DOM
+                                        - componentDidUnmount()
+                        19. React Hooks : provide react Features like state and Lifecycleetc to Functional component
+                                   - Import hook from react to Functional component by calling hook
+                                   - Hook can only called at top level of component
+                                   - Hook cannot be Conditional
+                                   - Types Of  Hooks 
+                                        - Predefined Hook 
+                                          - useState(initial-value) : return state and function to updating state
+                                          - useEffect(<function>,<dependency>) Hook allows you to perform side effects in your components.
+                                                  - dependency is optional
+                                                  - useEffect runs on every render
+                                                  - Based on dependency we can control side effects
+                                                      - No dependency is passing : Runs on every render
+                                                      - If dependency passed is a empty array : Runs only on the first render
+                                                      - props or state value changed : Runs on first render, And any time any dependency value changes.
+                                                  - useNavigate() : used to redirect from one page to another, return a method for changing the location
+                                        - Custom Hook 
+                        20. Rendering List (Array of List) : use map method 
+                        21. React Forms : handled by component
+                                   - preventDefault() :methods cancels the event if it is cancelable
+                                   - component inside form classified into diffenrent Types
+                                       - Controlled components : are managed by react component (a firm expect this)
+                                       - Uncontrolled components : are managed by DOM (Here data obtained dynamically)
+
+                        22. API call - React
+                                  - Use of Axios Library: Promise based HTTP client for the browser and node.js
+                                  - Creating an instances : using create method in axios
+                         
+                         23. Routing /set up path for components in React
+                                   - Use react-router-dom Library
+                                        - entire app should be inside BrowserRouter
+                                        - Wrap all components which needed to be set up path inside Routes
+                                        - To set up path for components use Route
+                                   - Link - used to redirect from one page to another
+                                   - useNavigate Hook : redirection
+
+                         24. REDUX : State Management System
+                              -Advantages
+                                   - Avoid props Drilling :
+                                   - Reduce Coupling Components
+                              -Work flow
+                                   - Store : js file , Which can globally accessed by react app
+                                        - used to store the state
+                                        - To access store by react app use Provider selector from react-redux Library
+                                        - To access state from store to component , use useSelector Hook from react-redux Library
+                                   - Actions : js file , used to defie logic to update the state
+                                        - To execute Actions , component should dispach the Actions
+                                             - To dispach action in component , use useDispatch Hook from react-redux Library
+                                   - Reducers :  js file , to update state in store
+                                        - reducers gets response from Action as payload to update state in store
+
+                         25. REDUX Toolkit: standard 
+
+
+
+                                  
+
+
+
+
+                              -------------------------------------React Applicatioin--------------------------------------
+
+
+                              1. Simple Interest Calculator App
+                                   - React Component
+                                   - React Hook:useState
+                                   - React Form
+                                   - Conditional Rendering
+                                   - React Event
+                                   - User Input Validation
+                              2. Netflix clone :
+                                   - React Component
+                                   - React Hook: useState,useEffect
+                                   - API calling in React
+                              3. Media Player App
+                                   - React Routing
+                                   - React Bootstrap
+
+
+
+
+
+                                   
+
+
+                     
+                                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
