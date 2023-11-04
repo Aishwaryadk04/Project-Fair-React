@@ -55,7 +55,7 @@ function Footer() {
        </div>
      </div>
    </div>
-   <p className='text-black'>Copyright © 2023 E Cart. Build with React</p>
+   <p className='text-black'>Copyright © 2023 Project Fair. Build with React</p>
  </div>   )
 }
 
