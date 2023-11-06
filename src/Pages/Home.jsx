@@ -15,7 +15,7 @@ function Home() {
 
            <p> One stop destination for all Software Development Projects. Where user can add and manage their projects. As well as access all projects available in our website... What are you waiting for!!!! </p>
 
-           <button className='btn btn-warning '>Start to explore <i className="fa-solid fa-right-long fa-beat ms-2"></i></button>
+           <Link to={'/login'} className='btn btn-warning '>Start to explore <i className="fa-solid fa-right-long fa-beat ms-2"></i></Link>
            </Col>
            <Col sm={12} md={6}  >
               <img style={{marginTop:'100px'}} className='w-80' src={titleImage} alt="" />
